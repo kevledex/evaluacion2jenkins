@@ -28,7 +28,7 @@ try:
 
     esperar_elemento(driver, By.ID, "loader", condicion="invisible")
     
-    boton_click_me = esperar_elemento(driver, By.XPATH, "//*[@id='button1']/p", condicion="clickable")
+    boton_click_me = esperar_elemento(driver, By.ID, "button1", condicion="clickable")
     
     tiempo_fin = time.time()
     tiempo_total = tiempo_fin - tiempo_inicio
